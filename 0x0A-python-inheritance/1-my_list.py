@@ -9,4 +9,8 @@ class MyList(list):
 
     def print_sorted(self):
         """Print a list in sorted ascending order."""
-        print(sorted(self))
+        if not all(isinstance(item, type(self[0])) for item in self[1:]):
+            raise TypeError("List with mixed types can't be sorted")
+
+        sorted_list = sorted(self)
+        print(sorted_list)
