@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # 5-base_geometry.py
 # Auth: Solomon Nwante
-"""Defines a class Rectangle that inherits from BaseGeometry."""
+"""Defines a Rectangle subclass Square."""
 Rectangle = __import__('9-rectangle').Rectangle
 
 
