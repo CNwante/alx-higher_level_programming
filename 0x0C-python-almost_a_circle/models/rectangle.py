@@ -2,7 +2,7 @@
 # rectangle.py
 # Auth: Solomon Nwante
 """Defines a rectangle class."""
-from models.base ipmort Base
+from models.base import Base
 
 
 class Rectangle(Base):
