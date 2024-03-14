@@ -1,9 +1,8 @@
--- Creates the user user_0d_1 with all privileges.
+-- Check for the existence and create the user user_0d_1 if not exists
 CREATE USER
     IF NOT EXISTS 'user_0d_1'@'localhost'
     IDENTIFIED BY 'user_0d_1_pwd';
 GRANT ALL PRIVILEGES
-   ON *.*
-   TO 'user_0d_1'@'localhost'
-   IDENTIFIED BY 'user_0d_1_pwd';
+    ON *.*
+    TO 'user_0d_1'@'localhost';
 FLUSH PRIVILEGES;
